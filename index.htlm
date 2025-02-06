@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stato di Allerta</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 50px;
+        }
+        #alert-box {
+            padding: 20px;
+            font-size: 24px;
+            border-radius: 10px;
+            text-align: center;
+            color: white;
+        }
+        button {
+            margin: 10px;
+            padding: 10px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Stato di Allerta</h1>
+    <div id="alert-box">Caricamento livello di allerta...</div>
+
+    <h2>Aggiorna il livello di allerta</h2>
+    <button onclick="updateAlert(0)">🟢 Livello 0</button>
+    <button onclick="updateAlert(1)">🟡 Livello 1</button>
+    <button onclick="updateAlert(2)">🟠 Livello 2</button>
+    <button onclick="updateAlert(3)">🔴 Livello 3</button>
+
+    <script src="script.js"></script>
+</body>
+</html>
